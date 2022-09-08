@@ -23,4 +23,13 @@ class SumArrayElementTest {
         int [] expectSum={1 ,10 ,25 ,95, 104};
         Assertions.assertArrayEquals(expectSum, actualSum);
     }
+
+    @Test
+    void test2() {
+        SumArrayElement t=new SumArrayElement();
+        int[] a ={-1,9,15,-70,9};
+        int[] actualSum=t.getRunningSum(a);
+        int [] expectSum={-1 ,8 ,23 ,-47, -38};
+        Assertions.assertArrayEquals(expectSum, actualSum);
+    }
 }

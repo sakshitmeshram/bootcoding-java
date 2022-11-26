@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<college>
+    <class>
+        <student1>
+            <name>Amit</name>
+            <rollNo>1</rollNo>
+        </student1>
+        <student2>
+            <name>Navin</name>
+            <rollNo>2</rollNo>
+        </student2>
+    </class>
+</college>

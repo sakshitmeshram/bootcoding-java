@@ -10,15 +10,23 @@ public class RemoveDuplicateElement {
         int a[] = {1,2,3,2,4,5,2,43,2,2};
         int tar = 2 ;
      double x = System.currentTimeMillis();
-        Map<Integer, Integer> map = new LinkedHashMap<>();
+
+
+
+
+
+
+
+
+       /* Map<Integer, Integer> map = new LinkedHashMap<>();
         for(int i :a){
 
-           /* if(map.containsKey(i)){
+           *//* if(map.containsKey(i)){
 
                 map.put(i,1+1);
             }else{
                 map.put(i,1);
-            }*/
+            }*//*
             map.put(i,1);
         }
 
@@ -33,7 +41,7 @@ public class RemoveDuplicateElement {
 
             System.out.println(m.getKey());
 
-        }
+        }*/
         System.out.println(System.currentTimeMillis()-x +" MS");
 
 

@@ -2,12 +2,14 @@ package com.bootcoding.basic.arrayList;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+
 
 public class Example1 {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer>list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
 
         list.add(1);
         list.add(4);
@@ -17,7 +19,10 @@ public class Example1 {
 
         Collections.sort(list);
 
-        System.out.println(list);
+        for (Integer in : list)
+              {
+                  System.out.println(in);
+        }
 
     }
 

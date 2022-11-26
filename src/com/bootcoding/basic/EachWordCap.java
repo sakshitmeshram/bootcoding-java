@@ -2,7 +2,7 @@ package com.bootcoding.basic;
 
 public class EachWordCap {
 
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         String text = "Go is an open source programming language supported by Google";
 
         String[]  str = text.split("\\s");

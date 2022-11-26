@@ -41,7 +41,7 @@ public class RotatArray {
     }
 
     public static void main(String[] args) {
-        int [] n = {1,2,3,4,5,6,7 , 8 ,9 };
+        int [] n = {1,2,3,4,5,6,7 , 8 ,9 ,10,12};
         int k =5;
         RotatArray rotatArray = new RotatArray();
         rotatArray.perform(n,k);

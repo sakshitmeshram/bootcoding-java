@@ -1,6 +1,5 @@
 package com.bootcoding.basic.userinterfase;
 
-import com.mysql.cj.jdbc.Driver;
 
 import java.sql.*;
 

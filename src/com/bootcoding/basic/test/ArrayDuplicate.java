@@ -1,9 +1,14 @@
 package com.bootcoding.basic.test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ArrayDuplicate {
 
     public static int Search(String[]a){
         int count=0;
+
+
         for(int i=0;i<a.length-1;i++){
 
             String input=a[i];

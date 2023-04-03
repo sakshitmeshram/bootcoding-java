@@ -2,7 +2,7 @@ package com.bootcoding.basic.linkList;
 
 public class LinkNodePrint {
 
-    public class Node {
+    public static class Node {
 
         int data;
         Node next;

@@ -2,47 +2,37 @@ package com.bootcoding.basic.tasksm;
 
 import sun.reflect.generics.tree.Tree;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.*;
 
 public class Exa {
-    public static void main(String[] args) {
-        String s = "tree";
-        TreeMap<Character,Integer>treeMap = new TreeMap<>();
-        char[] w = s.toCharArray();
-        for (int i=0;i< w.length;i++){
-            if (treeMap.containsKey(w[i])){
-                treeMap.put(w[i],treeMap.get(w[i])+1);
-            }
-            else {
-                treeMap.put(w[i],1);
-            }
+    public static void main(String[] args) throws IOException {
+        // Set up the RASA server URL
+        String rasaURL = "http://localhost:5005/webhooks/rest/webhook";
+
+        // Set up the message to send to RASA
+        String message = "Hi, how are you?";
+        String encodedMessage = URLEncoder.encode(message, "UTF-8");
+
+        // Send the message to RASA and receive the response
+        URL url = new URL(rasaURL + "?message=" + encodedMessage);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        con.setRequestMethod("GET");
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        String inputLine;
+        StringBuilder response = new StringBuilder();
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
         }
-        Comparator<Map.Entry<Character, Integer>> valueComparator = (e1, e2) -> e2.getValue().compareTo(e1.getValue());
+        in.close();
 
-// Creating a List object containing the Map.Entry objects from the TreeMap
-        List<Map.Entry<Character, Integer>> entryList = new ArrayList<>(treeMap.entrySet());
-
-// Sorting the List object using the Comparator object
-        Collections.sort(entryList, valueComparator);
-
-// Creating a new TreeMap object to store the sorted Map.Entry objects
-        TreeMap<Character, Integer> sortedMap = new TreeMap<>();
-        String res="";
-// Adding the sorted Map.Entry objects to the new TreeMap object
-        for (Map.Entry<Character, Integer> entry : entryList) {
-            if(entry.getValue()>1){
-                for(int i=0;i< entry.getValue();i++){
-                    res +=entry.getKey();
-                }
-            }
-            else {
-                res +=entry.getKey();
-            }
-
-        }
-
-// Printing the sorted TreeMap object
-        System.out.println(res);
-
+        // Print the response from RASA
+        System.out.println(response.toString());
     }
 }

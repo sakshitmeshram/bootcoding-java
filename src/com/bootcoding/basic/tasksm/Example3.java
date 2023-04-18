@@ -1,10 +1,6 @@
 package com.bootcoding.basic.tasksm;
 
 import java.util.Arrays;
-<<<<<<< HEAD
-import java.util.Optional;
-=======
->>>>>>> origin/main
 
 public class Example3 {
 
@@ -34,7 +30,6 @@ public class Example3 {
     }
 
     public static void main(String[] args) {
-<<<<<<< HEAD
         int[] nums = {1, 15, 6, 3};
         Example3 r = new Example3();
         //  System.out.println(r.differenceOfSum(nums));
@@ -42,10 +37,6 @@ public class Example3 {
         String s="hello";
         char[] arr = s.toLowerCase().toCharArray();
 
-=======
-        int []nums = {1,15,6,3};
-        Example3 r =new Example3();
-        System.out.println(r.differenceOfSum(nums));
->>>>>>> origin/main
+
     }
 }

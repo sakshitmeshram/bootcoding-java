@@ -1,17 +1,16 @@
 package com.bootcoding.basic.chatgpt;
 
-import com.squareup.okhttp.*;
 
 import java.io.IOException;
 
 public class OpenAICodex1 {
-
+/*
     public static void main(String[] args) throws Exception {
        // String prompt = "print(\"Hello, world!\")";
         final String API_ENDPOINT = "https://api.openai.com/v1/engines/davinci-codex/completions";
         String apiKey = "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";
 
-      /*  OkHttpClient client = new OkHttpClient();
+      *//*  OkHttpClient client = new OkHttpClient();
 
         MediaType mediaType = MediaType.parse("application/json");
 
@@ -28,12 +27,12 @@ public class OpenAICodex1 {
 
 
         String responseBody = response.body().string();
-        System.out.println(responseBody);*/
+        System.out.println(responseBody);*//*
 
-      /*  if (!response.isSuccessful()) {
+      *//*  if (!response.isSuccessful()) {
             throw new IOException("Unexpected code " + response);
         }
-*/
+*//*
 
 
 
@@ -57,7 +56,7 @@ public class OpenAICodex1 {
         Response response = client.newCall(request).execute();
         String responseBody = response.body().string();
 
-        System.out.println(responseBody);
+        System.out.println(responseBody);*/
 
-    }
+
 }

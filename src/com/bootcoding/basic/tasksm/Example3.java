@@ -30,8 +30,13 @@ public class Example3 {
     }
 
     public static void main(String[] args) {
-        int []nums = {1,15,6,3};
-        Example3 r =new Example3();
-        System.out.println(r.differenceOfSum(nums));
+        int[] nums = {1, 15, 6, 3};
+        Example3 r = new Example3();
+        //  System.out.println(r.differenceOfSum(nums));
+
+        String s="hello";
+        char[] arr = s.toLowerCase().toCharArray();
+
+
     }
 }

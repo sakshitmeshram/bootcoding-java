@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class SumArrayElementTest {
 
     @Test
-    void test() {
+    void test1() {
         SumArrayElement t = new SumArrayElement();
         int[] a = {1, 4, 1, 7, 9};
         int[] actualSum = t.getRunningSum(a);
@@ -16,7 +16,7 @@ class SumArrayElementTest {
     }
 
     @Test
-    void test1() {
+    void test2() {
         SumArrayElement t=new SumArrayElement();
         int[] a ={1,9,15,70,9};
         int[] actualSum=t.getRunningSum(a);
@@ -25,7 +25,7 @@ class SumArrayElementTest {
     }
 
     @Test
-    void test2() {
+    void test3() {
         SumArrayElement t=new SumArrayElement();
         int[] a ={-1,9,15,-70,9};
         int[] actualSum=t.getRunningSum(a);
